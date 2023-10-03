@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="site.css">
+    <title>Stackover Flow</title>
+</head>
+
+<body>
+
+    <!-- <li class="d-flex ai-center jc-space-between ml8 mt24 mb4 js-create-team-cta d-none">
+        <div class="flex--item tt-uppercase fs-fine fc-light">Teams</div>
+        <div class="flex--item">
+            <a href="javascript:void(0)" class="s-link p12 fc-black-500 h:fc-black-800 js-gps-track" role="button" aria-controls="popover-teams-create-cta" data-controller="s-popover" data-action="s-popover#toggle" data-s-popover-placement="bottom-start" data-s-popover-toggle-class="is-selected" data-gps-track="teams.create.left-sidenav.click({ Action: ShowInfo })" data-ga="[&quot;teams left navigation - anonymous&quot;,&quot;left nav show teams info&quot;,null,null,null]" aria-expanded="false">
+                <svg aria-hidden="true" class="svg-icon iconInfoSm" width="14" height="14" viewBox="0 0 14 14"><path d="M7 1a6 6 0 1 1 0 12A6 6 0 0 1 7 1Zm1 10V6H6v5h2Zm0-6V3H6v2h2Z"></path></svg>
+            </a>
+    
+        </div>
+    </li>
+    <li class="ps-relative js-create-team-cta d-none">
+        <a href="https://stackoverflowteams.com/teams/create/free/?utm_source=so-owned&amp;utm_medium=side-bar&amp;utm_campaign=campaign-38&amp;utm_content=cta" class="pl8 js-gps-track nav-links--link" title="Stack Overflow for Teams is a private, secure spot for your organization's questions and answers." data-gps-track="teams.create.left-sidenav.click({ Action: FreemiumTeamsCreateClick })" data-ga="[&quot;teams left navigation - anonymous&quot;,&quot;left nav team click&quot;,&quot;stackoverflow.com/teams/create/free&quot;,null,null]">
+            <div class="d-flex ai-center">
+                <div class="flex--item s-avatar va-middle bg-orange-400">
+                    <div class="s-avatar--letter mtn1">
+                        <svg aria-hidden="true" class="svg-icon iconBriefcaseSm" width="14" height="14" viewBox="0 0 14 14"><path d="M4 3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1h.5c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5h-7A1.5 1.5 0 0 1 2 10.5v-5C2 4.67 2.67 4 3.5 4H4V3Zm5 1V3H5v1h4Z"></path></svg>
+                    </div>
+                    <svg aria-hidden="true" class="native s-avatar--badge svg-icon iconShieldXSm" width="9" height="10" viewBox="0 0 9 10"><path fill="var(--white)" d="M0 1.84 4.5 0 9 1.84v3.17C9 7.53 6.3 10 4.5 10 2.7 10 0 7.53 0 5.01V1.84Z"></path><path fill="var(--black-500)" d="M1 2.5 4.5 1 8 2.5v2.51C8 7.34 5.34 9 4.5 9 3.65 9 1 7.34 1 5.01V2.5Zm2.98 3.02L3.2 7h2.6l-.78-1.48a.4.4 0 0 1 .15-.38c.34-.24.73-.7.73-1.14 0-.71-.5-1.23-1.41-1.23-.92 0-1.39.52-1.39 1.23 0 .44.4.9.73 1.14.12.08.18.23.15.38Z"></path></svg>
+                </div>
+                <div class="flex--item pl6">
+                    Create free Team
+                </div>
+            </div>
+        </a>
+    </li> 1.kişinin bitiş yeri. -->
+
+    <!--! benim başlayacağım yer -->
+
+    <div class="container-fluid">
+        <div class="kutular justify-content-around">
+            <div class="kutubir">
+                <div class="icerik">
+                    <div class="yazi text-center">
+                        <p>Basic</p>
+                    </div>
+                    <h2>$6.50 USD</h2>
+                    <p>per teammate / month</p>
+                    <hr>
+                    <div class="ikonlar d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor"
+                            class="bi bi-key-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                        </svg>
+                        <p class="m-2">Single sign-on (SSO) with SAML + Okta integration</p>
+                    </div>
+                    <div class="ikonlar d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="40" fill="currentColor"
+                            class="bi bi-megaphone-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-11zm-1 .724c-2.067.95-4.539 1.481-7 1.656v6.237a25.222 25.222 0 0 1 1.088.085c2.053.204 4.038.668 5.912 1.56V3.224zm-8 7.841V4.934c-.68.027-1.399.043-2.008.053A2.02 2.02 0 0 0 0 7v2c0 1.106.896 1.996 1.994 2.009a68.14 68.14 0 0 1 .496.008 64 64 0 0 1 1.51.048zm1.39 1.081c.285.021.569.047.85.078l.253 1.69a1 1 0 0 1-.983 1.187h-.548a1 1 0 0 1-.916-.599l-1.314-2.48a65.81 65.81 0 0 1 1.692.064c.327.017.65.037.966.06z" />
+                        </svg>
+                        <p class="m-2">ChatOps integrations - Slack & Microsoft Teams</p>
+                    </div>
+                    <div class="ikonlar d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="60" fill="currentColor"
+                            class="bi bi-shield-lock-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm0 5a1.5 1.5 0 0 1 .5 2.915l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99A1.5 1.5 0 0 1 8 5z" />
+                        </svg>
+                        <p class="m-2">Your own private space hosted on stackoverflowteams.com</p>
+                    </div>
+                    <div class="ikonlar d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="currentColor"
+                            class="bi bi-archive-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z" />
+                        </svg>
+                        <p class="m-2">Structured and searchable knowledge base</p>
+                    </div>
+                    <div class="buton text-center mt-5">
+                        <button class="buton1">Get started</button>
+                        <p class="yazi3 mt-2">Up to 250 teammates</p>
+                    </div>
+                </div>
+            </div>
+            <div class="kutuiki">
+                <div class="icerik">
+                    <div class="oneri">
+                        <p>RECOMMENDED</p>
+                    </div>
+                    <div class="yazi2">
+                        <p>Business</p>
+                    </div>
+                    <h2>$13.50 USD</h2>
+                    <p>per teammate / month</p>
+                    <hr>
+                    <div class="ikonlar d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor"
+                            class="bi bi-plus-lg" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                        </svg>
+                        <p class="m-2">All the features of Basic plus…</p>
+                    </div>
+                    <div class="ikonlar d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor"
+                            class="bi bi-file-text" viewBox="0 0 16 16">
+                            <path
+                                d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z" />
+                            <path
+                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+                        </svg>
+                        <p class="m-2">Long-form knowledge with Articles</p>
+                    </div>
+                    <div class="ikonlar d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor"
+                            class="bi bi-link-45deg" viewBox="0 0 16 16">
+                            <path
+                                d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
+                            <path
+                                d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
+                        </svg>
+                        <p class="m-2">Additional integrations — ChatOps, Jira, GitHub & Okta</p>
+                    </div>
+                    <div class="ikonlar d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor"
+                            class="bi bi-card-text" viewBox="0 0 16 16">
+                            <path
+                                d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                            <path
+                                d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                        <p class="m-2">Group content together into Collections</p>
+                    </div>
+                    <div class="ikonlar d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor"
+                            class="bi bi-clipboard-data" viewBox="0 0 16 16">
+                            <path
+                                d="M4 11a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1zm6-4a1 1 0 1 1 2 0v5a1 1 0 1 1-2 0V7zM7 9a1 1 0 0 1 2 0v3a1 1 0 1 1-2 0V9z" />
+                            <path
+                                d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+                            <path
+                                d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+                        </svg>
+                        <p class="m-2">Usage and adoption metrics</p>
+                    </div>
+                    <div class="ikonlar d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor"
+                            class="bi bi-shield-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z" />
+                            <path
+                                d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z" />
+                        </svg>
+                        <p class="m-2">Priority customer support</p>
+                    </div>
+                    <div class="ikonlar d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor"
+                            class="bi bi-wrench" viewBox="0 0 16 16">
+                            <path
+                                d="M.102 2.223A3.004 3.004 0 0 0 3.78 5.897l6.341 6.252A3.003 3.003 0 0 0 13 16a3 3 0 1 0-.851-5.878L5.897 3.781A3.004 3.004 0 0 0 2.223.1l2.141 2.142L4 4l-1.757.364L.102 2.223zm13.37 9.019.528.026.287.445.445.287.026.529L15 13l-.242.471-.026.529-.445.287-.287.445-.529.026L13 15l-.471-.242-.529-.026-.287-.445-.445-.287-.026-.529L11 13l.242-.471.026-.529.445-.287.287-.445.529-.026L13 11l.471.242z" />
+                        </svg>
+                        <p class="m-2">Content Health tools</p>
+                    </div>
+                    <div class="buton text-center mt-5">
+                        <button class="buton2">Get started</button>
+                        <p class="yazi3 mt-2">Unlimited teammates</p>
+                    </div>
+                </div>
+            </div>
+            <div class="kutuüç">
+                <div class="icerik">
+                    <div class="yazi4 text-center">
+                        <p>Enterprise</p>
+                    </div>
+                    <h2>Custom pricing</h2>
+                    <p>Let’s talk about what you need</p>
+                    <hr>
+                    <div class="ikonlar d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor"
+                            class="bi bi-plus-lg" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+                        </svg>
+                        <p class="m-2">Premium features of Business plus…</p>
+                    </div>
+                    <div class="ikonlar d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor"
+                            class="bi bi-people-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                        </svg>
+                        <p class="m-2">Unlimited Teams within your instance</p>
+                    </div>
+                    <div class="ikonlar d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor"
+                            class="bi bi-image-alt" viewBox="0 0 16 16">
+                            <path
+                                d="M7 2.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zm4.225 4.053a.5.5 0 0 0-.577.093l-3.71 4.71-2.66-2.772a.5.5 0 0 0-.63.062L.002 13v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4.5l-4.777-3.947z" />
+                        </svg>
+                        <p class="m-2">Flexible hosting options — cloud or on-premises</p>
+                    </div>
+                    <div class="ikonlar d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor"
+                            class="bi bi-code" viewBox="0 0 16 16">
+                            <path
+                                d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z" />
+                        </svg>
+                        <p class="m-2">Robust read and write API</p>
+                    </div>
+                    <div class="ikonlar d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor"
+                            class="bi bi-question-square" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                            <path
+                                d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
+                        </svg>
+                        <p class="m-2">Your own customer success and community building representative</p>
+                    </div>
+                    <div class="ikonlar d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor"
+                            class="bi bi-shield-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z" />
+                            <path
+                                d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z" />
+                        </svg>
+                        <p class="m-2">99.5% uptime SLA and priority support</p>
+                    </div>
+                    <div class="buton text-center mt-5">
+                        <button class="buton3">Request a demo</button>
+                        <p class="yazi3 mt-2">Unlimited teammates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 justify-content-evenly d-flex">
+                <div class="box-1">
+                    <div class="kutu-yazisi text-center">
+                        <p>A Forrester Consulting study shows <strong>191% return on investment</strong> with Stack
+                            Overflow for Teams.</p>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <div class="kutu-yazisi text-center">
+                        <p>A Forrester Consulting study shows <strong>saved $10M</strong> with Stack Overflow for Teams.
+                        </p>
+                    </div>
+                </div>
+                <div class="box-3">
+                    <div class="kutu-yazisi text-center">
+                        <p>A Forrester Consulting study shows <strong>27% more time</strong> with Stack Overflow for
+                            Teams.</p>
+                    </div>
+                </div>
+                <div class="box-4">
+                    <div class="son-kutu text-center">
+                        <p>You can save time and money with Stack Overflow for Teams.</p>
+                        <button class="kutu-butonu">Calculate your ROI</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="resimler">
+            <div class="row">
+                <div class="col-3">
+                    <a href=""><img src="resimler/illo-integrations-left.png" width="350" height="350" alt=""></a>
+                </div>
+                <div class="col-6 text-center">
+                    <h3 class="baslik">Integrates with and improves other tools</h3>
+                    <p class="resim-yazi">All plans come with integrations for ChatOps tools <a href="">Slack</a> & <a
+                            href="">Microsoft Teams</a> in order to cut down on pings, limit distractions and make the
+                        tools even more powerful. Business and Enterprise customers get access to Jira, GitHub & Okta
+                        integrations.</p>
+                    <div class="ikonlar d-flex justify-content-evenly">
+                        <div class="ikonbir">
+                            <svg aria-hidden="true" class="native w48 h48 wmx75 svg-icon iconSlack" width="40"
+                                height="65" viewBox="0 0 18 18">
+                                <path fill="#E01E5A"
+                                    d="M6.5 16A1.5 1.5 0 0 1 5 14.5v-4a1.5 1.5 0 1 1 3 0v4c0 .83-.67 1.5-1.5 1.5Zm-4-4a1.5 1.5 0 0 1 0-3H4v1.5c0 .83-.67 1.5-1.5 1.5Z">
+                                </path>
+                                <path fill="#36C5F0"
+                                    d="M2.5 5h4a1.5 1.5 0 1 1 0 3h-4a1.5 1.5 0 1 1 0-3Zm4-4C7.33 1 8 1.67 8 2.5V4H6.5a1.5 1.5 0 1 1 0-3Z">
+                                </path>
+                                <path fill="#ECB22E"
+                                    d="M10.5 9h4a1.5 1.5 0 0 1 0 3h-4a1.5 1.5 0 0 1 0-3Zm0 7A1.5 1.5 0 0 1 9 14.5V13h1.5a1.5 1.5 0 0 1 0 3Z">
+                                </path>
+                                <path fill="#2EB67D"
+                                    d="M10.5 1c.83 0 1.5.67 1.5 1.5v4a1.5 1.5 0 0 1-3 0v-4c0-.83.67-1.5 1.5-1.5Zm4 4a1.5 1.5 0 0 1 0 3H13V6.5c0-.83.67-1.5 1.5-1.5Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="ikoniki">
+                            <img src="https://cdn.sstatic.net/Img/product/teams/microsoft-integration/microsoft-teams-logo.svg?v=00361aadd408"
+                                width="43" height="58" class="native w48 h48 wmx75" alt="">
+                        </div>
+                        <div class="ikonuc">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="65" fill="currentColor"
+                                class="bi bi-github" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                            </svg>
+                        </div>
+                        <div class="ikondort">
+                            <svg aria-hidden="true" class="native w48 h48 wmx75 svg-icon iconJira" width="40"
+                                height="65" viewBox="0 0 18 18">
+                                <path fill="#2684FF"
+                                    d="M16.36 1H8.78a3.42 3.42 0 0 0 3.42 3.42h1.4v1.35A3.42 3.42 0 0 0 17 9.2V1.66a.66.66 0 0 0-.64-.66Z">
+                                </path>
+                                <path fill="url(#Jiraa)"
+                                    d="M12.33 5H4.74a3.42 3.42 0 0 0 3.42 3.43h1.4v1.35a3.42 3.42 0 0 0 3.42 3.42V5.66a.66.66 0 0 0-.65-.66Z">
+                                </path>
+                                <path fill="url(#Jirab)"
+                                    d="M8.36 9H.76a3.42 3.42 0 0 0 3.44 3.42h1.4v1.35a3.42 3.42 0 0 0 3.42 3.43V9.66A.66.66 0 0 0 8.36 9Z">
+                                </path>
+                                <defs>
+                                    <linearGradient id="Jiraa" x1="12.82" x2="9.6" y1="5.02" y2="8.34"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset=".18" stop-color="#0052CC"></stop>
+                                        <stop offset="1" stop-color="#2684FF"></stop>
+                                    </linearGradient>
+                                    <linearGradient id="Jirab" x1="346.65" x2="210.84" y1="327.03" y2="460.17"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop offset=".18" stop-color="#0052CC"></stop>
+                                        <stop offset="1" stop-color="#2684FF"></stop>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="ikonbes">
+                            <svg aria-hidden="true" class="native w48 h48 wmx75 svg-icon iconOkta" width="40"
+                                height="65" viewBox="0 0 18 18">
+                                <path fill="#007DC1"
+                                    d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16Zm0-4a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="ikonaltiyazi">Some of the premium features available with paid tiers</p>
+                </div>
+                <div class="col-3"><a href=""><img src="resimler/illo-integrations-right.png" width="350" height="350"
+                            alt=""></a></div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <div id="kutu-1" class="metehan box1">
+                <svg aria-hidden="true" class="p-fc-purple d:fc-orange-400 d-block mx-auto mb12 svg-spot spotKey"
+                    width="80" height="90" viewBox="0 0 48 48">
+                    <path
+                        d="m43.05 15.18-22.29 9.35a9.1 9.1 0 0 0-10.87-3 9 9 0 0 0-4.82 11.79 9 9 0 0 0 17.17-5.2l12.28-5.22 1.5 3.57c.2.47.7.68 1.18.48l1.65-.7c.46-.19.67-.7.48-1.16l-1.5-3.58 1.92-.8 2.08 4.94c.2.47.7.68 1.17.48l1.65-.69c.47-.2.68-.7.48-1.17l-2.06-4.9 1.45-.6c.47-.2.67-.7.48-1.18l-.81-1.92a.85.85 0 0 0-1.14-.5ZM15.36 34.86a5.33 5.33 0 1 1-4.14-9.84 5.33 5.33 0 0 1 4.14 9.84Z"
+                        opacity=".2"></path>
+                    <path
+                        d="M6.82 30.54a5.5 5.5 0 1 0 10.14-4.26 5.5 5.5 0 0 0-10.14 4.26Zm3.72-5.36a3.5 3.5 0 1 1 2.7 6.45 3.5 3.5 0 0 1-2.7-6.45Zm8.74-3.38a10.2 10.2 0 0 0-11.26-2.25 10.06 10.06 0 0 0-5.46 13.14 10.06 10.06 0 0 0 13.2 5.3 10.18 10.18 0 0 0 6.04-10.7l9.66-3.99 1.17 2.78a2 2 0 0 0 2.61 1.07l1.85-.78a2 2 0 0 0 1.07-2.62l-1.2-2.86.63-.27L39.01 24a2 2 0 0 0 2.62 1.07l1.85-.78a2 2 0 0 0 1.07-2.61l-1.47-3.5c.9-.74 1.25-2.02.77-3.15l-.19-.46a2.78 2.78 0 0 0-3.63-1.48l-20.75 8.7Zm-1.12 1.74a1 1 0 0 0 1.23.38l21.41-8.99c.4-.16.85.02 1.02.42l.19.45a.73.73 0 0 1-.37.95 1 1 0 0 0-.75 1.37l1.81 4.33-1.84.77L39.08 19a1 1 0 0 0-.49-.52 1 1 0 0 0-.91-.07l-2.41 1.01a1 1 0 0 0-.55 1.28l.05.14 1.54 3.69-1.84.77-1.55-3.69a1 1 0 0 0-1.3-.53h-.01l-11.3 4.65a1 1 0 0 0-.6 1.16l.02.14A8.2 8.2 0 0 1 15 36.14a8.06 8.06 0 0 1-10.58-4.23A8.06 8.06 0 0 1 8.8 21.4a8.18 8.18 0 0 1 9.36 2.15Z">
+                    </path>
+                </svg>
+                <p>Robust read and</p>
+                <p> write API</p>
+            </div>
+            <div id="kutu-2" class=" metehan box2">
+                <svg aria-hidden="true" class="p-fc-purple d:fc-orange-400 d-block mx-auto mb12 svg-spot spotLock"
+                    width="80" height="102" viewBox="0 0 48 48">
+                    <path
+                        d="M12 22a2 2 0 0 0-2 2v19a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V26a4 4 0 0 0-4-4H12Zm6 7a5 5 0 1 1 7.67 4.23l.05.35c.15.84.36 1.8.61 2.86A2.06 2.06 0 0 1 24.35 39h-2.7a2.06 2.06 0 0 1-1.98-2.56c.29-1.2.52-2.3.66-3.2l-.19-.14A5 5 0 0 1 18 29Z"
+                        opacity=".2"></path>
+                    <path
+                        d="M23 24a5 5 0 0 0-2.86 9.1l.2.13c-.15.91-.38 2-.67 3.21A2.06 2.06 0 0 0 21.65 39h2.7c1.32 0 2.3-1.26 1.98-2.56a46.74 46.74 0 0 1-.6-2.86l-.06-.35A5 5 0 0 0 23 24Zm0 2a3 3 0 0 1 1.76 5.43l-.16.11a2 2 0 0 0-.91 2c.16.98.4 2.12.7 3.37.01.05-.02.09-.04.09h-2.7c-.02 0-.05-.04-.04-.09.3-1.25.54-2.4.7-3.36a2 2 0 0 0-.78-1.92l-.13-.09A3 3 0 0 1 23 26ZM12 12.44V18H9a3 3 0 0 0-3 3v21a3 3 0 0 0 3 3h28a3 3 0 0 0 3-3V21a3 3 0 0 0-3-3h-3v-5.56C34 6.2 29.36 1 23 1S12 6.19 12 12.44ZM23 3c5.14 0 9 4.18 9 9.44V18H14v-5.56C14 7.18 17.86 3 23 3ZM9 20h28a1 1 0 0 1 1 1v21a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V21a1 1 0 0 1 1-1Z">
+                    </path>
+                </svg>
+                <p>Single sign-on with</p>
+                <p>AD or SAML</p>
+            </div>
+            <div id="kutu-3" class="metehan box3">
+                <svg aria-hidden="true" class="p-fc-purple d:fc-orange-400 d-block mx-auto mb12 svg-spot spotPeople"
+                    width="80" height="100" viewBox="0 0 48 48">
+                    <path
+                        d="M13.5 28a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM7 30a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v5h11v-5a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v10a2 2 0 0 1-2 2H33v5a1 1 0 0 1-1 1H20a1 1 0 0 1-1-1v-5H8a1 1 0 0 1-1-1V30Zm25-6.5a4.5 4.5 0 1 0 9 0 4.5 4.5 0 0 0-9 0ZM24.5 34a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Z"
+                        opacity=".2"></path>
+                    <path
+                        d="M16.4 26.08A6 6 0 1 0 7.53 26C5.64 26.06 4 27.52 4 29.45V40a1 1 0 0 0 1 1h9a1 1 0 1 0 0-2h-4v-7a1 1 0 1 0-2 0v7H6v-9.55c0-.73.67-1.45 1.64-1.45H16a1 1 0 0 0 .4-1.92ZM12 18a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm16.47 14a6 6 0 1 0-8.94 0A3.6 3.6 0 0 0 16 35.5V46a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V35.5c0-1.94-1.64-3.42-3.53-3.5ZM20 28a4 4 0 1 1 8 0 4 4 0 0 1-8 0Zm-.3 6h8.6c1 0 1.7.75 1.7 1.5V45h-2v-7a1 1 0 1 0-2 0v7h-4v-7a1 1 0 1 0-2 0v7h-2v-9.5c0-.75.7-1.5 1.7-1.5ZM42 22c0 1.54-.58 2.94-1.53 4A3.5 3.5 0 0 1 44 29.45V40a1 1 0 0 1-1 1h-9a1 1 0 1 1 0-2h4v-7a1 1 0 1 1 2 0v7h2v-9.55A1.5 1.5 0 0 0 40.48 28H32a1 1 0 0 1-.4-1.92A6 6 0 1 1 42 22Zm-2 0a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z">
+                    </path>
+                    <g opacity=".35">
+                        <path
+                            d="M17 10a1 1 0 011-1h12a1 1 0 110 2H18a1 1 0 01-1-1Zm1-5a1 1 0 100 2h12a1 1 0 100-2H18ZM14 1a1 1 0 00-1 1v12a1 1 0 001 1h5.09l4.2 4.2a1 1 0 001.46-.04l3.7-4.16H34a1 1 0 001-1V2a1 1 0 00-1-1H14Zm1 12V3h18v10h-5a1 1 0 00-.75.34l-3.3 3.7-3.74-3.75a1 1 0 00-.71-.29H15Z">
+                        </path>
+                    </g>
+                </svg>
+                <p>Your own customer success</p>
+                <p>representative</p>
+            </div>
+            <div id="kutu-4" class=" metehan box4">
+                <svg aria-hidden="true" class="p-fc-purple d:fc-orange-400 d-block mx-auto mb12 svg-spot spotHeadset"
+                    width="80" height="100" viewBox="0 0 48 48">
+                    <path
+                        d="M33.8 7.06a19.9 19.9 0 0 0-8.42-2.4 19.57 19.57 0 0 0-8.57 1.62c-.2.14-.25.37-.12.6l2.25 3.97c.12.19.4.34.65.34a.7.7 0 0 0 .17-.03c.53-.12 3.52-.8 5.4-.72 1.9.09 4.89 1.07 5.32 1.22l.11.03c.23.03.52-.05.66-.28l2.61-3.74c.14-.22.12-.46-.07-.61ZM8 39.52c0 2.24 1.8 4.06 4 4.06 1.11 0 2.04-.93 2.04-2v-9.53c0-1.12-.93-2.05-2.03-2.05A4.04 4.04 0 0 0 8 34.06v5.46Zm32.03 4.06c2.2 0 4-1.82 4-4.06v-5.46c0-2.24-1.8-4.06-4-4.06-1.1 0-2.03.93-2.03 2.05v9.52c0 1.08.92 2 2.03 2ZM23 48h4a2 2 0 0 0 0-4h-4a2 2 0 0 0 0 4Z"
+                        opacity=".2"></path>
+                    <path
+                        d="M13.66 5.54C8.04 8.6 4 14.24 4 21v12h1v-1.11A4.94 4.94 0 0 1 9.98 27 3 3 0 0 1 13 29.97v9.1A3 3 0 0 1 9.98 42a4.97 4.97 0 0 1-4.9-4H3.33C1.93 38 1 36.77 1 35.5c0-.8.37-1.59 1-2.06V21C2 9.34 12.57 1 23.5 1S45 9.34 45 21v11.44c.63.47 1 1.26 1 2.06 0 1.27-.94 2.5-2.33 2.5H42v.11a4.89 4.89 0 0 1-3.07 4.52A1 1 0 0 1 39 42a2.88 2.88 0 0 1-3 3h-8.17A3 3 0 0 1 25 47h-4a3 3 0 0 1 0-6h4a3 3 0 0 1 2.83 2H36c.46 0 .66-.16.78-.3.14-.2.22-.46.22-.7a3 3 0 0 1-3-2.92v-9.11A3 3 0 0 1 37.02 27 4.94 4.94 0 0 1 42 31.89V32h1V21c0-6.51-3.75-11.97-9.04-15.1a1 1 0 0 1-.03.05l-1.16 1.68c2.42 1.57 4.44 3.1 5.87 5.16C40.22 15.1 41 17.93 41 22a1 1 0 1 1-2 0c0-3.8-.72-6.2-2.01-8.07-1.2-1.74-2.96-3.1-5.36-4.66l-.71 1.04a1 1 0 0 1-1.17.37c-1.83-.68-3.7-.94-5.82-.94-2.1 0-4 .3-5.84.94a1 1 0 0 1-1.15-.38l-.98-1.41c-2.7 1.73-4.65 3.16-5.95 5.04C8.72 15.8 8 18.2 8 22a1 1 0 1 1-2 0c0-4.07.78-6.91 2.36-9.2 1.54-2.23 3.78-3.84 6.47-5.56l-1.15-1.67a1 1 0 0 1-.02-.03Zm1.82-.89 2.68 3.9a19.7 19.7 0 0 1 5.77-.81c2.03 0 3.91.22 5.77.8l2.49-3.59A20.53 20.53 0 0 0 23.5 3c-2.79 0-5.52.59-8.02 1.65ZM25 43h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2ZM7 31.89v5.22A2.94 2.94 0 0 0 9.98 40c.59 0 1.02-.48 1.02-.92v-9.11A1 1 0 0 0 9.98 29 2.94 2.94 0 0 0 7 31.89ZM5 35H3.33c-.05 0-.12.02-.2.1a.6.6 0 0 0-.13.4c0 .17.06.31.14.4.07.08.14.1.2.1H5v-1Zm35-3.11A2.94 2.94 0 0 0 37.02 29a1 1 0 0 0-1.02.97v9.1c0 .45.43.93 1.02.93A2.94 2.94 0 0 0 40 37.11V31.9ZM42 35h1.67c.05 0 .12-.02.2-.1a.6.6 0 0 0 .13-.4.6.6 0 0 0-.14-.4c-.07-.08-.14-.1-.2-.1H42v1Z">
+                    </path>
+                </svg>
+                <p>99.5% uptime SLA and priority</p>
+                <p>support</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="row">
+            <div class="col d-flex justify-content-around">
+                <div class="text-1">
+                    <svg aria-hidden="true" class="fc-blue-500 mb16 svg-spot spotQuote" width="48" height="48"
+                        viewBox="0 0 48 48">
+                        <path
+                            d="M5.01 14.71a5.64 5.64 0 0 1 5.62-5.65h8.75c3.1 0 5.62 2.53 5.62 5.65v19.8l-4.94 8.01a1 1 0 0 1-.85.48h-4.03a1 1 0 0 1-.86-1.5l4.04-6.99h-7.73a5.64 5.64 0 0 1-5.62-5.65V14.7Zm22.99 0a5.61 5.61 0 0 1 5.6-5.65h7.72c3.1 0 5.63 2.53 5.63 5.65v19.8L43 42.45a1 1 0 0 1-.9.55h-4.02a1 1 0 0 1-.88-1.47l3.77-7.02h-7.38A5.61 5.61 0 0 1 28 28.86V14.7Z"
+                            opacity=".2"></path>
+                        <path
+                            d="M1 11.66A6.64 6.64 0 0 1 7.62 5h8.79a6.64 6.64 0 0 1 6.62 6.66v19.29a2.8 2.8 0 0 1-.42 1.47l-4.47 7.25A2.8 2.8 0 0 1 15.75 41h-2.09a2.8 2.8 0 0 1-2.39-4.27l1.54-2.5a.8.8 0 0 0-.68-1.23h-4.5c-1.9 0-3.57-.94-4.73-2.27A7.59 7.59 0 0 1 1 25.8V11.66ZM7.62 7A4.64 4.64 0 0 0 3 11.66V25.8c0 1.3.53 2.62 1.4 3.61A4.34 4.34 0 0 0 7.62 31h4.5a2.8 2.8 0 0 1 2.4 4.27l-1.54 2.5a.8.8 0 0 0 .68 1.23h2.1a.8.8 0 0 0 .68-.38l4.47-7.25a.8.8 0 0 0 .12-.42v-19.3A4.64 4.64 0 0 0 16.41 7H7.62ZM24 11.66A6.64 6.64 0 0 1 30.63 5h7.75A6.64 6.64 0 0 1 45 11.66V31.5c0 .5-.14 1-.4 1.44l-3.96 6.69A2.8 2.8 0 0 1 38.22 41h-2.07a2.8 2.8 0 0 1-2.39-4.27l1.54-2.5a.8.8 0 0 0-.68-1.23h-4c-1.9 0-3.55-.94-4.72-2.27A7.59 7.59 0 0 1 24 25.8V11.66ZM30.63 7A4.64 4.64 0 0 0 26 11.66V25.8c0 1.3.53 2.62 1.4 3.61A4.34 4.34 0 0 0 30.63 31h3.99A2.8 2.8 0 0 1 37 35.27l-1.54 2.5a.8.8 0 0 0 .68 1.23h2.07a.8.8 0 0 0 .7-.4l3.97-6.68a.8.8 0 0 0 .11-.42V11.66A4.64 4.64 0 0 0 38.38 7h-7.76Z">
+                        </path>
+                    </svg>
+                    <p>Stack Overflow for Teams has been a resource for our entire company. Not only for developers to
+                        solve problems, it’s also enabled our sales field to answer technical questions that help them
+                        close deals.</p>
+                    <hr>
+                    <strong class="gucluyazi">Director of Product Management</strong>
+                    <p>Microsoft</p>
+                </div>
+                <div class="text-2">
+                    <svg aria-hidden="true" class="fc-blue-500 mb16 svg-spot spotQuote" width="48" height="48"
+                        viewBox="0 0 48 48">
+                        <path
+                            d="M5.01 14.71a5.64 5.64 0 0 1 5.62-5.65h8.75c3.1 0 5.62 2.53 5.62 5.65v19.8l-4.94 8.01a1 1 0 0 1-.85.48h-4.03a1 1 0 0 1-.86-1.5l4.04-6.99h-7.73a5.64 5.64 0 0 1-5.62-5.65V14.7Zm22.99 0a5.61 5.61 0 0 1 5.6-5.65h7.72c3.1 0 5.63 2.53 5.63 5.65v19.8L43 42.45a1 1 0 0 1-.9.55h-4.02a1 1 0 0 1-.88-1.47l3.77-7.02h-7.38A5.61 5.61 0 0 1 28 28.86V14.7Z"
+                            opacity=".2"></path>
+                        <path
+                            d="M1 11.66A6.64 6.64 0 0 1 7.62 5h8.79a6.64 6.64 0 0 1 6.62 6.66v19.29a2.8 2.8 0 0 1-.42 1.47l-4.47 7.25A2.8 2.8 0 0 1 15.75 41h-2.09a2.8 2.8 0 0 1-2.39-4.27l1.54-2.5a.8.8 0 0 0-.68-1.23h-4.5c-1.9 0-3.57-.94-4.73-2.27A7.59 7.59 0 0 1 1 25.8V11.66ZM7.62 7A4.64 4.64 0 0 0 3 11.66V25.8c0 1.3.53 2.62 1.4 3.61A4.34 4.34 0 0 0 7.62 31h4.5a2.8 2.8 0 0 1 2.4 4.27l-1.54 2.5a.8.8 0 0 0 .68 1.23h2.1a.8.8 0 0 0 .68-.38l4.47-7.25a.8.8 0 0 0 .12-.42v-19.3A4.64 4.64 0 0 0 16.41 7H7.62ZM24 11.66A6.64 6.64 0 0 1 30.63 5h7.75A6.64 6.64 0 0 1 45 11.66V31.5c0 .5-.14 1-.4 1.44l-3.96 6.69A2.8 2.8 0 0 1 38.22 41h-2.07a2.8 2.8 0 0 1-2.39-4.27l1.54-2.5a.8.8 0 0 0-.68-1.23h-4c-1.9 0-3.55-.94-4.72-2.27A7.59 7.59 0 0 1 24 25.8V11.66ZM30.63 7A4.64 4.64 0 0 0 26 11.66V25.8c0 1.3.53 2.62 1.4 3.61A4.34 4.34 0 0 0 30.63 31h3.99A2.8 2.8 0 0 1 37 35.27l-1.54 2.5a.8.8 0 0 0 .68 1.23h2.07a.8.8 0 0 0 .7-.4l3.97-6.68a.8.8 0 0 0 .11-.42V11.66A4.64 4.64 0 0 0 38.38 7h-7.76Z">
+                        </path>
+                    </svg>
+                    <p>Engineers should help solve the hardest questions, the unknowns, where being familiar with how
+                        the product was built is essential. But we don’t want to keep answering solved problems over and
+                        over again. That’s where Stack Overflow for Teams really helps.</p>
+                    <hr>
+                    <strong class="gucluyazi">Director of Engineering</strong>
+                    <p>Elastic Cloud</p>
+                </div>
+                <div class="text-3">
+                    <svg aria-hidden="true" class="fc-blue-500 mb16 svg-spot spotQuote" width="48" height="48"
+                        viewBox="0 0 48 48">
+                        <path
+                            d="M5.01 14.71a5.64 5.64 0 0 1 5.62-5.65h8.75c3.1 0 5.62 2.53 5.62 5.65v19.8l-4.94 8.01a1 1 0 0 1-.85.48h-4.03a1 1 0 0 1-.86-1.5l4.04-6.99h-7.73a5.64 5.64 0 0 1-5.62-5.65V14.7Zm22.99 0a5.61 5.61 0 0 1 5.6-5.65h7.72c3.1 0 5.63 2.53 5.63 5.65v19.8L43 42.45a1 1 0 0 1-.9.55h-4.02a1 1 0 0 1-.88-1.47l3.77-7.02h-7.38A5.61 5.61 0 0 1 28 28.86V14.7Z"
+                            opacity=".2"></path>
+                        <path
+                            d="M1 11.66A6.64 6.64 0 0 1 7.62 5h8.79a6.64 6.64 0 0 1 6.62 6.66v19.29a2.8 2.8 0 0 1-.42 1.47l-4.47 7.25A2.8 2.8 0 0 1 15.75 41h-2.09a2.8 2.8 0 0 1-2.39-4.27l1.54-2.5a.8.8 0 0 0-.68-1.23h-4.5c-1.9 0-3.57-.94-4.73-2.27A7.59 7.59 0 0 1 1 25.8V11.66ZM7.62 7A4.64 4.64 0 0 0 3 11.66V25.8c0 1.3.53 2.62 1.4 3.61A4.34 4.34 0 0 0 7.62 31h4.5a2.8 2.8 0 0 1 2.4 4.27l-1.54 2.5a.8.8 0 0 0 .68 1.23h2.1a.8.8 0 0 0 .68-.38l4.47-7.25a.8.8 0 0 0 .12-.42v-19.3A4.64 4.64 0 0 0 16.41 7H7.62ZM24 11.66A6.64 6.64 0 0 1 30.63 5h7.75A6.64 6.64 0 0 1 45 11.66V31.5c0 .5-.14 1-.4 1.44l-3.96 6.69A2.8 2.8 0 0 1 38.22 41h-2.07a2.8 2.8 0 0 1-2.39-4.27l1.54-2.5a.8.8 0 0 0-.68-1.23h-4c-1.9 0-3.55-.94-4.72-2.27A7.59 7.59 0 0 1 24 25.8V11.66ZM30.63 7A4.64 4.64 0 0 0 26 11.66V25.8c0 1.3.53 2.62 1.4 3.61A4.34 4.34 0 0 0 30.63 31h3.99A2.8 2.8 0 0 1 37 35.27l-1.54 2.5a.8.8 0 0 0 .68 1.23h2.07a.8.8 0 0 0 .7-.4l3.97-6.68a.8.8 0 0 0 .11-.42V11.66A4.64 4.64 0 0 0 38.38 7h-7.76Z">
+                        </path>
+                    </svg>
+                    <p>As we started to use [Stack Overflow for Teams] and saw how nice it was to have a repository of
+                        information, we started to see it spread to other teams. Our customer support team started using
+                        it, our people success team started using it, next thing we knew, we had [Slack] integrations
+                        all over the place.</p>
+                    <hr>
+                    <strong class="gucluyazi">Engineering</strong>
+                    <p>Expensify</p>
+                </div>
+                <div class="text-4">
+                    <svg aria-hidden="true" class="fc-blue-500 mb16 svg-spot spotQuote" width="48" height="48"
+                        viewBox="0 0 48 48">
+                        <path
+                            d="M5.01 14.71a5.64 5.64 0 0 1 5.62-5.65h8.75c3.1 0 5.62 2.53 5.62 5.65v19.8l-4.94 8.01a1 1 0 0 1-.85.48h-4.03a1 1 0 0 1-.86-1.5l4.04-6.99h-7.73a5.64 5.64 0 0 1-5.62-5.65V14.7Zm22.99 0a5.61 5.61 0 0 1 5.6-5.65h7.72c3.1 0 5.63 2.53 5.63 5.65v19.8L43 42.45a1 1 0 0 1-.9.55h-4.02a1 1 0 0 1-.88-1.47l3.77-7.02h-7.38A5.61 5.61 0 0 1 28 28.86V14.7Z"
+                            opacity=".2"></path>
+                        <path
+                            d="M1 11.66A6.64 6.64 0 0 1 7.62 5h8.79a6.64 6.64 0 0 1 6.62 6.66v19.29a2.8 2.8 0 0 1-.42 1.47l-4.47 7.25A2.8 2.8 0 0 1 15.75 41h-2.09a2.8 2.8 0 0 1-2.39-4.27l1.54-2.5a.8.8 0 0 0-.68-1.23h-4.5c-1.9 0-3.57-.94-4.73-2.27A7.59 7.59 0 0 1 1 25.8V11.66ZM7.62 7A4.64 4.64 0 0 0 3 11.66V25.8c0 1.3.53 2.62 1.4 3.61A4.34 4.34 0 0 0 7.62 31h4.5a2.8 2.8 0 0 1 2.4 4.27l-1.54 2.5a.8.8 0 0 0 .68 1.23h2.1a.8.8 0 0 0 .68-.38l4.47-7.25a.8.8 0 0 0 .12-.42v-19.3A4.64 4.64 0 0 0 16.41 7H7.62ZM24 11.66A6.64 6.64 0 0 1 30.63 5h7.75A6.64 6.64 0 0 1 45 11.66V31.5c0 .5-.14 1-.4 1.44l-3.96 6.69A2.8 2.8 0 0 1 38.22 41h-2.07a2.8 2.8 0 0 1-2.39-4.27l1.54-2.5a.8.8 0 0 0-.68-1.23h-4c-1.9 0-3.55-.94-4.72-2.27A7.59 7.59 0 0 1 24 25.8V11.66ZM30.63 7A4.64 4.64 0 0 0 26 11.66V25.8c0 1.3.53 2.62 1.4 3.61A4.34 4.34 0 0 0 30.63 31h3.99A2.8 2.8 0 0 1 37 35.27l-1.54 2.5a.8.8 0 0 0 .68 1.23h2.07a.8.8 0 0 0 .7-.4l3.97-6.68a.8.8 0 0 0 .11-.42V11.66A4.64 4.64 0 0 0 38.38 7h-7.76Z">
+                        </path>
+                    </svg>
+                    <p>What we love about Stack Overflow for Teams is that it’s a very dynamic tool…there’s just so many
+                        ways to use this as a liaison between different teams and different knowledge bases</p>
+                    <hr>
+                    <strong class="gucluyazi">Software Engineer</strong>
+                    <p>Box</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let kartlar = document.querySelectorAll(".metehan")
+                console.log(kartlar)
+                window.addEventListener("scroll", function () {
+                    kartlar.forEach(function (kart, index) {
+                        let yukari = kart.getBoundingClientRect().top;
+                        if (yukari - window.innerHeight <= 707) {
+                            console.log("debug",window.innerHeight)
+                            setTimeout(function () {
+                                kart.style.opacity = 1
+                                kart.style.transform = "translateY(0)"
+                            }, index * 500)
+                        }
+
+                    })
+                })
+            })
+        </script>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
